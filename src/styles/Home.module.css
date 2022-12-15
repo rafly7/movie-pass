@@ -1,0 +1,8 @@
+.heading-container {
+  display: flex;
+}
+
+.heading-popular {
+  font-weight: 700;
+  font-family: var(--font-family-opensans);
+}

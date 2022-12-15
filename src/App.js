@@ -1,24 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import { AppView } from './App_view';
+import { LK21Provider } from './context/lk21';
+import SearchAppBar from './components/AppBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LK21Provider>
+      <SearchAppBar/>
+      <AppView/>
+    </LK21Provider>
   );
 }
 
